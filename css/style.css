@@ -1,3 +1,5 @@
+/*--start of global declarations*/
+
 @font-face {
   font-family: Myanmar;
   src: url('../assets/fonts/MyanmarText-Bold.woff2');
@@ -12,7 +14,7 @@
 }
 
 .global-container-width{
-  width: 960px;
+  width: 1140px;
 }
 
 .global-container-margin{
@@ -26,7 +28,7 @@ p{
   align-items: center;
 }
 
-a{
+.a{
   padding: 15px 45px;
   border: 50px none;
   margin-left: 34%;
@@ -40,6 +42,58 @@ a{
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
 }
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.box-container, .box-container2{
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box{
+  width: 263px;
+  height: 388px;
+  background-color: #f0f2f1;
+}
+
+.price-container{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.price p{
+  text-transform: capitalize;
+  font-size: 0.88rem;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  color: #909090;
+  margin-bottom: 15px;
+}
+
+.price h6{
+  text-align: center;
+  font-size: 1rem;
+  color: #ff5353;
+  margin-bottom: 15px;
+}
+
+.price h1{
+  font-size: 1.13rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+/*--end of global declarations*/
 
 .header{
   height: 110px;
@@ -75,7 +129,6 @@ a{
 }
 
 .bot-header{
-  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
 }
 
@@ -86,9 +139,32 @@ a{
   height: 80px;
 }
 
-.bot-header p{
-    font-size: 0.81rem;
-    word-spacing: 41px;
+.bot-header h1{
+  font-family: Myanmar;
+  font-size: 2.13rem;
+  word-spacing: 41px;
+  text-transform: capitalize;
+}
+.bot-header h1 span{
+  color: #ff5353;
+}
+
+.menu{
+  word-spacing: 40px;
+}
+
+.menu ul li{
+  display: inline-flex;
+}
+
+.menu ul li a{
+  font-size: 0.81rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.81rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
 }
 
 .banner {
@@ -121,48 +197,38 @@ a{
 }
 
 .feature{
-  height: 963px;
+  height: 813px;
 }
 
 .feature-container{
-  display: flex;
   height: inherit;
 }
 
 .feature-text{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 2.25rem;
-  text-transform: uppercase;
-  height: 266px;
-  margin: 150px auto;
+  height: 90px;
+  margin-top: 150px;
 }
 
+.feature-image{
+  height: 450px;
+}
 
+.feature .box-container{
+  height: inherit;
+}
 
+.feature .box{
+  width: 360px;
+  height: 451px;
+}
 
+.feature-price{
+  height: 245px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.price{
+  width: 360px;
+}
 
 .sale{
   height: 630px;
@@ -190,4 +256,116 @@ a{
   color: #565656;
   letter-spacing: 2px;
   margin-bottom: 50px;
+}
+
+.popular{
+  height: 937px;
+}
+
+.popular-text{
+  height: 114px;
+  margin-top: 150px;
+}
+
+.popular-image{
+  height: 371px;
+}
+
+.popular-price{
+  margin-top: 50px;
+  height: 135px;
+}
+
+.popular-pagination{
+  height: 150px;
+}
+
+.trending-text{
+  height: 114px;
+}
+
+.trending .price-container1{
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.socmed{
+  height: 515px;
+}
+
+.socmed-text{
+  margin-top: 150px;
+}
+
+.socmed .box-container{
+  margin-top: 90px;
+}
+
+.socmed .box{
+  width: 260px;
+  height: 250px;
+  background-color: #9a9a9a;
+}
+
+.footer{
+  height: 540px;
+  background-color: #e9e1d8;
+}
+
+.column-container{
+  height: 378px;
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .column{
+  margin-top: 100px;
+  width: 25%;
+  height: 380px;
+}
+
+.footer h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.footer ul {
+  line-height: 30px;
+}
+.footer ul li a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.88rem;
+  text-decoration: none;
+  color: #888888;
+}
+
+.footer-end{
+  height: 120px;
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-end .border{
+  margin-top: 50px;
+  border: 1px solid #d6d8d9;
+}
+
+.footer .rights p{
+  margin-top: 45px;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+  color: #888888;
+}
+
+.footer .rights p span{
+  color: #ff5353;
 }
