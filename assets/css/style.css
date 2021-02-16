@@ -1,0 +1,193 @@
+@font-face {
+  font-family: Myanmar;
+  src: url('../assets/fonts/MyanmarText-Bold.woff2');
+}
+
+.body {
+  overflow: scroll;
+}
+
+.global-width{
+  width: 100%;
+}
+
+.global-container-width{
+  width: 960px;
+}
+
+.global-container-margin{
+  margin: 0px auto;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+}
+
+a{
+  padding: 15px 45px;
+  border: 50px none;
+  margin-left: 34%;
+  border-radius: 4px;
+  color: #FFFFFF;
+  background-color: #ff5353;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header{
+  height: 110px;
+}
+
+.top-header{
+  height: 30px;
+  background-color: #fef7f6;
+}
+
+.top-header p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.69rem;
+  margin-top: 10px;
+}
+
+.top-header-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-header p{
+  text-transform: lowercase;
+}
+
+.top-header p span{
+  text-transform: uppercase;
+  word-spacing: 5px;
+}
+
+.bot-header{
+  height: 80px;
+}
+
+.bot-header{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+.bot-header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.bot-header p{
+    font-size: 0.81rem;
+    word-spacing: 41px;
+}
+
+.banner {
+  height: 580px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.banner-container{
+  height: 580px;
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.banner p{
+  font-size: 0.88rem;
+  color: #565656;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.banner h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.75rem;
+  font-weight: 500;
+  display: grid;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.feature{
+  height: 963px;
+}
+
+.feature-container{
+  display: flex;
+  height: inherit;
+}
+
+.feature-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  height: 266px;
+  margin: 150px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sale{
+  height: 630px;
+}
+
+.sale-container{
+  height: 550px;
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.sale h1{
+  font-family: 'Dancing Script', cursive;
+  font-size: 6.25rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.sale p{
+  font-size: 2.6rem;
+  font-weight: 300;
+  color: #565656;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
