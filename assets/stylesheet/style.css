@@ -46,6 +46,17 @@ p{
   font-family: 'Roboto', sans-serif;
 }
 
+a{
+  text-decoration: none;
+  color: #888888;
+}
+
+a:hover{
+  color: #ff5353;
+  background-color: #FFFFFF;
+  transition: 0.2s;
+}
+
 h1{
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -102,6 +113,20 @@ h1{
   margin-bottom: 80px;
 }
 
+
+.hide{
+  position: absolute;
+  display: none;
+  width: 50px;
+  height: 50px;
+}
+
+.box img:hover + .hide{
+  display: flex;
+  color: #000000;
+  transition-delay: 2s;
+}
+
 /*--end of global declarations*/
 
 .header{
@@ -120,6 +145,7 @@ h1{
 }
 
 .top-header-container{
+  height: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -129,8 +155,10 @@ h1{
 }
 
 .top-header ul{
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .top-header ul li a{
@@ -140,7 +168,11 @@ h1{
   text-transform: uppercase;
   word-spacing: 5px;
   color: #000000;
-  word-spacing: 5px;
+  margin: 0px 10px 0px;
+}
+
+.top-header a:hover{
+  color: #ff5353;
 }
 
 .bot-header{
@@ -162,10 +194,18 @@ h1{
   height: 35px;
 }
 
+.bot-header a:hover{
+  color: #ff5353;
+}
+
 .bot-header-nav{
   width: 100px;
   display: flex;
   justify-content: space-between;
+}
+
+.bot-header-nav a:hover{
+  color: #ff5353;
 }
 
 .brand h1 a{
@@ -436,9 +476,17 @@ h1{
 
 .journal-content h1{
   margin-top: 15px;
-  text-transform: lowercase;
+  text-transform: initial;
   text-align: left;
   font-size: 1.25rem;
+}
+
+.journal-content a{
+  color: #000000;
+}
+
+.journal-content a:hover{
+  color: #ff5353;
 }
 
 .journal .options ul{
@@ -448,9 +496,35 @@ h1{
 }
 
 .journal ul li a{
+  font-size: 0.88rem;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   color: #888888;
+}
+
+.journal-options{
+  font-size: 0.88rem;
+  color: #888888;
+  margin-right: 15px;
+}
+
+.date{
+  display: flex;
+  align-items: center;
+}
+
+.date img{
+  width: 12px;
+  height: 6px;
+  margin-right: 10px;
+}
+
+.ti-comments{
+  margin-left: 40px;
+}
+
+.options-div a:hover, .options-div span:hover{
+  color: #ff5353;
 }
 
 .socmed{
@@ -540,7 +614,7 @@ h1{
 }
 
 .column ul li a:hover{
-  text-decoration: underline;
+  color: #ff5353;
 }
 
 .column .border{
