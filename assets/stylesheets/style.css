@@ -81,6 +81,23 @@ h1{
   background-color: #f0f2f1;
 }
 
+.box-container div:hover .box .hide{
+  opacity: 1;
+  visibility: visible;
+}
+
+.box-container div:hover .box .hide a:first-child{
+  animation: fadeInUp 200ms;
+}
+
+.box-container div:hover .box .hide a:nth-child(2){
+  animation: fadeInUp 400ms;
+}
+
+.box-container div:hover .box .hide a:last-child{
+  animation: fadeInUp 600ms;
+}
+
 .price-container{
   width: inherit;
   height: inherit;
@@ -127,6 +144,14 @@ h1{
   margin: 0px 5px 0px;
 }
 
+.hide a:hover{
+  background-color: #ff5353;
+}
+
+.hide a:hover i{
+  color: #fff;
+}
+
 .hide i{
   font-size: 16px;
   margin: 20px auto;
@@ -135,7 +160,7 @@ h1{
 }
 
 .hide{
-  bottom: 10%;
+  bottom: 30px;
   left: 13%;
   width: 200px;
   height: inherit;
@@ -143,6 +168,18 @@ h1{
   text-align: center;
   display: flex;
   align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease;
+}
+
+@keyframes fadeInUp{
+  from {
+    transform: translateY(30px);
+  }
+  to{
+    transform: translateY(0);
+  }
 }
 
 .featured .box ,.popular .box, .trending .box, .socmed .box{
