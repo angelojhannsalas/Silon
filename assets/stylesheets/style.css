@@ -574,20 +574,50 @@ h1{
 .socmed a{
   position: relative;
   display: block;
+  overflow: hidden;
 }
 
 .socmed img{
   display: block;
 }
 
+.socmed a::before{
+  content: '';
+  width: calc(100% - 23px);
+  height: 100%;
+  position: absolute;
+  background-color: #ff535380;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease;
+}
+
+.socmed a:hover::before{
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
 .socmed i{
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  left: 42%;
   position: absolute;
   width: inherit;
   text-align: center;
   font-size: 30px;
   color: #FFFFFF;
+  opacity: 0;
+  visibility: none;
+  transition: all 300ms ease;
+}
+
+.socmed a:hover i{
+  opacity: 1;
+  visibility: visible;
 }
 
 .footer{
