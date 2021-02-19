@@ -69,6 +69,7 @@ h1{
 }
 
 .box-container, .box-container2, .shallow-box-container{
+  position: relative;
   width: inherit;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -81,11 +82,11 @@ h1{
 }
 
 .price-container{
-    width: inherit;
-    height: inherit;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 .price{
@@ -134,19 +135,23 @@ h1{
 }
 
 .hide{
-  margin: 0px auto;
+  bottom: 10%;
+  left: 13%;
   width: 200px;
   height: inherit;
-  position: relative;
+  position: absolute;
   text-align: center;
-  opacity: 0.8;
-  animation-name: slide;
-  animation-duration: 0.5s;
-  top: -100px;
   display: flex;
   align-items: center;
 }
 
+.featured .box ,.popular .box, .trending .box, .socmed .box{
+  position: relative;
+}
+
+.featured img , .popular img , .trending img{
+  position: absolute;
+}
 /*--end of global declarations*/
 
 .header{
@@ -264,7 +269,7 @@ h1{
 
 .banner {
   height: 580px;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -277,7 +282,7 @@ h1{
 }
 
 .banner-container img{
-  width: inherit;
+  width: auto;
   height: inherit;
   position: absolute;
   object-fit: contain;
@@ -332,6 +337,9 @@ h1{
   width: 360px;
 }
 
+.featured .hide{
+  left: 25%;
+}
 .sale{
   height: 630px;
 }
@@ -563,14 +571,23 @@ h1{
   background-color: #9a9a9a;
 }
 
+.socmed a{
+  position: relative;
+  display: block;
+}
+
+.socmed img{
+  display: block;
+}
+
 .socmed i{
+  top: 50%;
+  left: 50%;
+  position: absolute;
   width: inherit;
   text-align: center;
   font-size: 30px;
-  color: #000000;
-}
-
-.socmed a{
+  color: #FFFFFF;
 }
 
 .footer{
