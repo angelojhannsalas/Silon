@@ -807,3 +807,136 @@ h1{
 .footer .rights p span a:hover{
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 375px) {
+  .top-header-container, .global-container-width, .app-container, .social-container,
+   .socmed, .journal, .popular, .popular-container, .trending, .features, .featured {
+    width: 100%;
+    height: auto;
+  }
+
+  .app-container, .journal .box-container, .popular .box-container, .shallow-box-container,
+  .trending .box-container, .featured .box-container {
+    display: block;
+  }
+
+  .journal .journal-content h1, .footer .column-container .column,
+  .footer .column-container .column h1 {
+    text-align: center;
+  }
+
+  .features .shallow-box, .socmed {
+    margin-bottom: 20px;
+  }
+
+  .social-container, .socmed .box-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .featured .featured-text h1, .popular .popular-text h1, .trending .trending-text h1,
+   .journal .journal-text h1, .socmed .socmed-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .trending .trending-text h1, .popular .popular-text h1 {
+    margin-left: -50px;
+  }
+
+  .journal-container, .featured-container {
+    width: calc(100% - 8px);
+    padding-left: 8px;
+  }
+
+  .trending-container, .popular-container, .shallow-box-container {
+    width: calc(100% - 55px);
+    padding-left: 55px;
+  }
+  .app-container .app-button {
+    width: 85px;
+  }
+
+  .footer .column-container:last-child h3 {
+    font-size: 0.5rem;
+  }
+
+  .footer .column-container:last-child h6 {
+    font-size: 0.6rem;
+  }
+
+  .column-container .column h1 {
+    font-size: 0.8rem;
+  }
+
+  .column-container .column ul li a {
+    font-size: 0.68rem;
+  }
+
+  .footer h1, .footer .rights p, .journal .box-container div  {
+    margin-bottom: 20px;
+  }
+
+  .column-container:first-child .column {
+    margin-left: 5px;
+  }
+
+  .features {
+    margin-bottom: 100px;
+  }
+
+  .banner .banner-container div {
+    margin-top: -300px;
+    margin-left: 80px;
+  }
+
+  .header .top-header-container p {
+    margin-top: 5px;
+  }
+
+  .header .bot-header-container {
+    margin-top: 18px;
+  }
+
+  .header .bot-header ul {
+    text-align: center;
+  }
+
+  .header .bot-header ul li a {
+    font-size: 0.7rem;
+  }
+
+  .header .bot-header-container .menu {
+    word-spacing: 0px;
+  }
+
+  .header .bot-header-container .brand {
+    font-size: 1.8rem; 
+  }
+
+  .banner .banner-container  h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner img {
+    position: relative;
+    margin-left: -300px;
+    margin-top: 265px;
+    width: 360px;
+    height: 360px;
+  }
+  .sale-container div {
+    margin-top: 30%
+  }
+
+  .sale h1 {
+    font-size: 4rem;
+  }
+
+  .sale p {
+    font-size: 2rem;
+  }
+
+  .sale img {
+    margin-top: 329px;
+  }
+}
