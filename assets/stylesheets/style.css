@@ -910,7 +910,7 @@ h1{
   }
 
   .header .bot-header-container .brand {
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
   }
 
   .banner .banner-container  h1 {
@@ -924,6 +924,7 @@ h1{
     width: 360px;
     height: 360px;
   }
+
   .sale-container div {
     margin-top: 30%
   }
@@ -938,5 +939,126 @@ h1{
 
   .sale img {
     margin-top: 329px;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 1024px) {
+  .top-header-container, .global-container-width, .app-container, .social-container,
+   .socmed, .journal, .popular, .popular-container, .trending, .features, .featured {
+    width: 100%;
+    height: auto;
+  }
+
+  .app-container, .popular .box-container, .shallow-box-container,
+   .featured .box-container, .journal .box-container {
+    display: block;
+  }
+
+  .journal .journal-content h1, .footer .column-container .column,
+  .footer .column-container .column h1, .sale .sale-container h1 {
+    text-align: center;
+  }
+
+  .features .shallow-box, .socmed {
+    margin-bottom: 20px;
+  }
+
+  .social-container, .socmed .box-container, .trending .box-container, .popular .box-container,
+  .features .shallow-box-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .featured-container {
+    width: calc(100% - 8px);
+    padding-left: 8px;
+  }
+
+  .trending-container .box-container, .popular-container .box-container,
+  .shallow-box-container, .socmed-container .box-container {
+    width: calc(100% - 160px);
+    padding-left: 160px;
+  }
+
+  .featured .box-container {
+    width: calc(100% - 330px);
+    padding-left: 330px;
+  }
+
+  .header .top-header .top-header-container {
+    width: calc(100% - 80px);
+    margin: 0px 40px 0px 40px;
+  }
+
+  .header .bot-header .bot-header-container {
+    padding-top: 20px;
+    width: calc(100% - 80px);
+    margin: 0px 40px 0px 40px;
+  }
+
+  .socmed .socmed-container a {
+    margin-bottom: 100px;
+  }
+
+  .journal .box-container {
+    width: calc(100% - 320px);
+    padding-left: 320px;
+  }
+
+  .journal .box-container div  {
+   margin-bottom: 50px;
+  }
+
+  .banner .banner-container  h1 {
+    font-size: 2rem;
+  }
+
+  .banner .banner-container div {
+    margin-left: 80px;
+  }
+
+  .banner img {
+    position: relative;
+    width: 766px;
+  }
+
+  .sale .sale-container div {
+    margin-top: 70px;
+    margin-left: 50px
+  }
+
+  .sale h1 {
+    font-size: 4rem;
+  }
+
+  .sale p {
+    font-size: 2rem;
+  }
+
+  .sale img {
+    width: 800px;
+    margin-top: 228px;
+  }
+
+  .footer h1, .footer .rights p, .journal .box-container div  {
+    margin-bottom: 20px;
+  }
+
+  .footer .app-container {
+    width: calc(100% - 60px);
+    margin-left: 60px;
+  }
+
+  .footer .app-container a {
+    margin-bottom: 10px;
+  }
+
+  .footer .social-container {
+    margin-left: 90px;
+    width: 100px;
+  }
+
+  .footer .social-container a {
+    margin-bottom: 10px;
   }
 }
